@@ -1,0 +1,216 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5E4F948C
+P 6100 3350
+F 0 "A1" H 6100 2261 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6100 2170 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6250 2400 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6100 2350 50  0001 C CNN
+	1    6100 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J2
+U 1 1 5E4F9E57
+P 4550 2750
+F 0 "J2" H 4630 2792 50  0000 L CNN
+F 1 "PIR1" H 4630 2701 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 4550 2750 50  0001 C CNN
+F 3 "~" H 4550 2750 50  0001 C CNN
+	1    4550 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5E4FA684
+P 4550 3450
+F 0 "J3" H 4630 3492 50  0000 L CNN
+F 1 "PIR2" H 4630 3401 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 4550 3450 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+	1    4550 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 5E4FA931
+P 4550 4200
+F 0 "J4" H 4630 4242 50  0000 L CNN
+F 1 "SSR" H 4630 4151 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x03_P3.175mm_Drill0.8mm" H 4550 4200 50  0001 C CNN
+F 3 "~" H 4550 4200 50  0001 C CNN
+	1    4550 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5E4FADB3
+P 4750 2650
+F 0 "#PWR0101" H 4750 2500 50  0001 C CNN
+F 1 "+5V" H 4765 2823 50  0000 C CNN
+F 2 "" H 4750 2650 50  0001 C CNN
+F 3 "" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5E4FB6AE
+P 4750 3350
+F 0 "#PWR0102" H 4750 3200 50  0001 C CNN
+F 1 "+5V" H 4765 3523 50  0000 C CNN
+F 2 "" H 4750 3350 50  0001 C CNN
+F 3 "" H 4750 3350 50  0001 C CNN
+	1    4750 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5E4FBAB2
+P 4750 4100
+F 0 "#PWR0103" H 4750 3950 50  0001 C CNN
+F 1 "+5V" H 4765 4273 50  0000 C CNN
+F 2 "" H 4750 4100 50  0001 C CNN
+F 3 "" H 4750 4100 50  0001 C CNN
+	1    4750 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E4FCED9
+P 4750 3550
+F 0 "#PWR0104" H 4750 3300 50  0001 C CNN
+F 1 "GND" H 4755 3377 50  0000 C CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E4FD053
+P 4750 4300
+F 0 "#PWR0105" H 4750 4050 50  0001 C CNN
+F 1 "GND" H 4755 4127 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E4FE907
+P 4750 2850
+F 0 "#PWR0106" H 4750 2600 50  0001 C CNN
+F 1 "GND" H 4755 2677 50  0000 C CNN
+F 2 "" H 4750 2850 50  0001 C CNN
+F 3 "" H 4750 2850 50  0001 C CNN
+	1    4750 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2750 5150 2750
+Wire Wire Line
+	5150 2750 5150 2950
+Wire Wire Line
+	5150 2950 5600 2950
+Wire Wire Line
+	5600 3050 5150 3050
+Wire Wire Line
+	5150 3050 5150 3450
+Wire Wire Line
+	5150 3450 4750 3450
+Wire Wire Line
+	4750 4200 5300 4200
+Wire Wire Line
+	5300 4200 5300 3150
+Wire Wire Line
+	5300 3150 5600 3150
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5E50A073
+P 4550 2100
+F 0 "J1" H 4468 1775 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 4468 1866 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 4550 2100 50  0001 C CNN
+F 3 "~" H 4550 2100 50  0001 C CNN
+	1    4550 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5E50B0DF
+P 4900 2100
+F 0 "D1" H 4900 1884 50  0000 C CNN
+F 1 "D" H 4900 1975 50  0000 C CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 4900 2100 50  0001 C CNN
+F 3 "~" H 4900 2100 50  0001 C CNN
+	1    4900 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 2100 6000 2100
+Wire Wire Line
+	6000 2100 6000 2350
+$Comp
+L power:+5V #PWR0107
+U 1 1 5E50B9F1
+P 6300 2350
+F 0 "#PWR0107" H 6300 2200 50  0001 C CNN
+F 1 "+5V" H 6315 2523 50  0000 C CNN
+F 2 "" H 6300 2350 50  0001 C CNN
+F 3 "" H 6300 2350 50  0001 C CNN
+	1    6300 2350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E50BF0C
+P 6200 4400
+F 0 "#PWR0108" H 6200 4150 50  0001 C CNN
+F 1 "GND" H 6205 4227 50  0000 C CNN
+F 2 "" H 6200 4400 50  0001 C CNN
+F 3 "" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4400 6100 4400
+Wire Wire Line
+	6100 4400 6100 4350
+Wire Wire Line
+	6200 4400 6200 4350
+Connection ~ 6200 4400
+$Comp
+L power:GND #PWR0109
+U 1 1 5E50C909
+P 5100 1700
+F 0 "#PWR0109" H 5100 1450 50  0001 C CNN
+F 1 "GND" H 5105 1527 50  0000 C CNN
+F 2 "" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1700 5100 1650
+Wire Wire Line
+	5100 1650 4750 1650
+Wire Wire Line
+	4750 1650 4750 2000
+$EndSCHEMATC
