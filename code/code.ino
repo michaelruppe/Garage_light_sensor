@@ -5,8 +5,8 @@
 */
 
 const unsigned int DEFAULT_DURATION_MS = 3 * 60 * 1000;
-const bool ON = false; // Solid-state relay is active-low
-const bool OFF = true;
+const bool ON = true;
+const bool OFF = false;
 
 // IO Definitions
 const int pirPinRollerdoor = 2;
@@ -28,7 +28,7 @@ void setup() {
 void loop() {
   static unsigned long start = 0;
   unsigned long now = millis();
-  
+
   // Motion detected, reset timer, light:ON
   if (digitalRead(pirPinPersonnel) || digitalRead(pirPinRollerdoor)) {
     digitalWrite(motionIndicator, true);
@@ -43,7 +43,7 @@ void loop() {
   if (elapsed >= DEFAULT_DURATION_MS) {
     digitalWrite(relayPin, OFF);
   }
-  
+
   delay(500);
 
 }
