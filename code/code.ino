@@ -22,7 +22,6 @@ void setup() {
 
   digitalWrite(relayPin, OFF);
   digitalWrite(motionIndicator, false);
-  delay(3000);
 }
 
 void loop() {
