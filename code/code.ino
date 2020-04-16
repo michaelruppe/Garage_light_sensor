@@ -43,6 +43,4 @@ void loop() {
     digitalWrite(relayPin, OFF);
   }
 
-  delay(500);
-
 }
